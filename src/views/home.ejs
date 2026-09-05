@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %></title>
+    <title><%= titulo %></title>
 </head>
 <body>
     <header>
-            <h1><%= title %></h1>
+        <h1><%= titulo %></h1>
     </header>
     <main>
-         <section>
-                <h2>Teste do Servidor</h2>
+        <section>
+            <h2>Teste do servidor</h2>
             <% if (candidatos && candidatos.length > 0) { %>
                 <ul>
                     <% candidatos.forEach(candidato => { %>
-                        <li><a href="/candidato/<%= candidato.numeroUrna %>"><%= candidato.nome %> - <%= candidato.numeroUrna %></a></li>
+                        <li>
+                            <a href="/candidato/<%= candidato.numeroUrna %>"><%= candidato.nome %></a>
+                        </li>
                     <% }) %>
                     <% } else { %>
-                        <li>Nenhum candidato encontrado.</li> 
-                    <$% } %>
+                        <li>Nenhum candidato encontrado.</li>
+                    <% } %>
                 </ul>
         </section>
     </main>
