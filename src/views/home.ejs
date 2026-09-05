@@ -16,7 +16,7 @@
                 <ul>
                     <% candidatos.forEach(candidato => { %>
                         <li>
-                            <a href="/candidato/<%= candidato.numeroUrna %>"><%= candidato.nome %></a>
+                            <a href="/candidato/<%= candidato.numeroUrna %>"><%= candidato.nome %> - <%= candidato.numeroUrna %></a>
                         </li>
                     <% }) %>
                     <% } else { %>
