@@ -7,7 +7,7 @@ candidatoViewRouter.get('/candidatos', (req, res) => {
   //  
   res.render('home', 
     {
-     titulo : 'Lista de Candidatos xxxx',
+     titulo : 'Lista de Candidatos',
     candidatos 
     }
 )
